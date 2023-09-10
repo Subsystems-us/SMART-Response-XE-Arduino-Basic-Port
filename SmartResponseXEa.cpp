@@ -345,6 +345,14 @@ void SRXESleep(void)
   // interrupts are turned on.
   sleep_cpu ();   // one cycle
   SRXEPowerUp();
+  // Enable ADC after Wake
+  ADMUX = 0xC0; // Int ref 1.6V
+  ADCSRA = 0x87; // Enable ADC
+  ADCSRB = 0x00; // MUX5= 0, freerun
+  ADCSRC = 0x54; // Default value
+  ADCSRA = 0x97; // Enable ADC
+  //delay(5);
+  ADCSRA |= (1 << ADSC); // start conversion
 } /* SRXESleep() */
 
 
