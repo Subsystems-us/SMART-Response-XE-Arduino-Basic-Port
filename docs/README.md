@@ -9,6 +9,13 @@ The printed book was designed to be about the size of the Smart Response XE devi
 Each page is 1/4 of a standard sheet of printer paper.
 
 There are undoubtedly errors in the Manual, and things that I left out.
+
+Known Errors:
+
+* Converting a number in a string to an integer on pages (29,30)
+* 
+*
+
 I wrote it in a rush for my nephew's christmas present, but in the future I want to improve on it
 with better program examples and wording of my explanations of things.
 
